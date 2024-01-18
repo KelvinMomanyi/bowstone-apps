@@ -2,14 +2,14 @@ import React from 'react'
 
 const New = () => {
   return (
-    <div className='w-full lg:h-[2000px] h-[2400px] bg-primary'>
+    <div className='w-full lg:h-[2000px] h-[3200px] bg-primary'>
       <div className='lg:px-56 px-4 flex flex-col justify-center py-10'> 
        <div className='flex justify-start py-2'>
           <h2 className='text-white font-primary text-lg'>Complete company services</h2>
        </div>
        <div className='flex lg:flex-row flex-col justify-between gap-2 py-6 font-secondary text-white'>
           <h1 className='text-3xl lg:text-left text-center font-secondary font-semibold'>Everything you need to start and manage your company in Kenya.</h1>
-          <p className='lg:text-left text-center font-secondary w-3/4'>We provide a full suite of flexible company services, including company formation, registered offices facilities, statutory compliance and document filing with the appropriate authorities. We also have resident directors and shareholders available, if required. These are backed by legal documents to ensure that you retain ownership & control over your company.</p>
+          <p className='lg:text-left text-center font-secondary lg:w-3/4'>We provide a full suite of flexible company services, including company formation, registered offices facilities, statutory compliance and document filing with the appropriate authorities. We also have resident directors and shareholders available, if required. These are backed by legal documents to ensure that you retain ownership & control over your company.</p>
        </div>
        <div className='space-y-8 text-black'>
          <div className='w-full lg:h-screen bg-white rounded-xl pt-6 p-8 py-8 '>
