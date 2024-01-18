@@ -70,8 +70,8 @@ const Header = () => {
         </div> 
         
         {/*small devices*/}
-        <div className='block lg:hidden'>
-           <IoMenu size={30} className='text-primary border-primary'/>
+          <div className='block lg:hidden'>
+             <IoMenu size={30} className='text-primary border-primary'/>
           </div>
        </div>
 

@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div className='lg:w-1/4 font-secondary'>
            <h2 className='text-xl'>Resources</h2>
-           <ul className='flex lg:flex-col flex-row lg:gap-0 gap-2'>
+           <ul >
             <li>Formation guides</li>
             <li>Governance guides</li>
             <li>Accounting guides</li>

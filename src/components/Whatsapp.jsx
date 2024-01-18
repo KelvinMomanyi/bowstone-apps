@@ -17,9 +17,9 @@ const Whatsapp = () => {
     };
     
   return (
-   <div  className=' fixed bottom-4 right-4 bg-green-500 rounded-full flex z-20 p-3 gap-4' onClick={handleDivClick} >
+   <div  className=' fixed bottom-4 right-4  bg-green-500 rounded-full flex z-20 p-3 gap-4' onClick={handleDivClick} >
 
-    <FaWhatsapp color='white' size={40}/>
+    <FaWhatsapp color='white' size={40} />
     <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className='flex flex-col text-white hidden sm:block'>
       <div className='flex flex-col font-secondary'>
         <span className='text-sm font-semibold'>Online Team</span>
