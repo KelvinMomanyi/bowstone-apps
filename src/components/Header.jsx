@@ -16,16 +16,16 @@ const Header = () => {
          <div className='flex justify-between gap-16'>
            <img src={logo} className='w-36 h-36'/>
            <nav className={`${ 'text-primary text-md font-secondary'} lg:flex gap-x-8 font-tertiary tracking-[3px] text-[15px] items-center lg:gap-x-8 hidden lg:block`}>
-           <a href='/' className={`text-primary flex gap-2`} >
+           <a href='/' className={`text-primary hover:text-black flex gap-2`} onClick={() => setIsHovered(true)} >
             Services
-            <CiMenuKebab size={20} className=' transition-all duration-100 mt-1' onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} /> 
+            <CiMenuKebab size={20} className=' transition-all duration-100 mt-1' onClick={() => setIsHovered(true)}  /> 
            </a>
            {isHovered && 
             <div className='absolute top-28 left-0 w-full h-[430px] bg-white z-10 shadow-xl p-8'>
               <Services/>
             </div>
            }
-           <a href='/about' className={`text-primary flex gap-2`} >
+           <a href='/about' className={`text-primary hover:text-black flex gap-2`} >
             Solutions 
             <SlArrowDown size={10} className='hover:rotate-180 transition-all duration-100 mt-1' onMouseEnter={() => setIsSolution(true)} onMouseLeave={() => setIsSolution(false)} /> 
            </a>
@@ -34,10 +34,10 @@ const Header = () => {
               Solutions
             </div>
            }
-            <a href='/rooms' className={`text-primary`}>
+            <a href='/rooms' className={`text-primary hover:text-black`}>
            Pricing   
             </a> 
-            <a href='/rooms' className={`text-primary flex`}>
+            <a href='/rooms' className={`text-primary  hover:text-black flex`}>
               About    
             </a>
             {/* <a href='/blog' className={`text-blue-600`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>

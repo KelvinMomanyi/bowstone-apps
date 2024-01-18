@@ -28,6 +28,10 @@ const Benefits = () => {
             <li>Unrestricted in activities</li>
             <li>Subject to local compliance</li>
           </ul>
+          <div className='w-full flex flex-col justify-center items-center text-center py-4'>
+             <h3 className='text-3xl font-secondary font-semibold'>2 days</h3>
+             <span className='text-lg opacity-40 text-black'>Setup time</span>
+          </div>
           <div className='p-4 flex flex-col items-center'>
             <button className='bg-primary text-white font-secondary' >Request a Quote</button>
           </div>
@@ -44,6 +48,10 @@ const Benefits = () => {
             <li>Unrestricted in activities</li>
             <li>Subject to local compliance</li>
           </ul>
+          <div className='w-full flex flex-col justify-center items-center text-center py-4'>
+             <h3 className='text-3xl font-secondary font-semibold'>1 day</h3>
+             <span className='text-lg opacity-40 text-black'>Setup time</span>
+          </div>
           <div className='p-4 flex flex-col items-center'>
             <button className='bg-white text-primary font-secondary' >Request a Quote</button>
           </div>
@@ -60,16 +68,20 @@ const Benefits = () => {
             <li>Limited busines activities</li>
             <li>No local compliance</li>
           </ul>
+          <div className='w-full flex flex-col justify-center items-center text-center py-4'>
+             <h3 className='text-3xl font-secondary font-semibold'>3-4 weeks</h3>
+             <span className='text-lg opacity-40 text-black'>Setup time</span>
+          </div>
           <div className='p-4 flex flex-col items-center'>
             <button className='bg-primary text-white font-secondary'>Request a Quote</button>
           </div>
         </div>
       </div>
       <div className='flex flex-col justify-center items-center lg:px-8 py-20 space-y-4 font-secondary'>
-        <h1 className='text-center text-2xl font-bold'>Unsure about which structure is right for you?</h1>
-        <p className='text-center lg:px-48 px-8 '>Get clarity by scheduling a free 30-minute consulation on starting your company in Kenya. <br/>We can advise you on anything from the optimal business structure, capital, investment, full <br/> foreign ownership options to shareholder requirements and more</p>
+        <h1 className='text-center text-2xl font-bold text-primary'>Unsure about which structure is right for you?</h1>
+        <p className='text-center lg:px-48 px-8 text-black'>Get clarity by scheduling a free 30-minute consulation on starting your company in Kenya. <br/>We can advise you on anything from the optimal business structure, capital, investment, full <br/> foreign ownership options to shareholder requirements and more</p>
         <div>
-          <button className='rounded-full border-2 border-primary'>Schedule a discovery call</button>
+          <button className='rounded-full border-2 border-primary text-black'>Schedule a discovery call</button>
         </div>
       </div>
       <Breaker/>

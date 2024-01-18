@@ -6,6 +6,7 @@ import { AiOutlineFieldTime } from "react-icons/ai"
 import { IoShieldCheckmarkOutline } from 'react-icons/io5'
 import { GiCash } from "react-icons/gi"
 import Breaker from '../components/Breaker'
+import Breaker2 from '../components/Breaker2'
 import Intro from '../components/Intro'
 import Ownership from '../components/Ownership'
 import Registration from '../components/Registration'
@@ -187,7 +188,7 @@ const Home = () => {
      <Registration/>
      <Breaker/>
      <New/>
-     <Breaker/>
+     <Breaker2/>
      <Faq/>
 
      <Poster/> 
