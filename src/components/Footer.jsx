@@ -16,7 +16,7 @@ const Footer = () => {
       <div className='flex sm:flex-row flex-col'>
         <div className='lg:w-1/4 flex flex-col'>
         
-          <span className='font-secondary py-4'>+852 2151 2260</span>
+          <span className='font-secondary py-4'>+254 78 095 8065</span>
           <div className='w-1/2 flex flex-col justify-start items-start'>
             <button className='rounded-full border-primary'>Email Us</button>
           </div>

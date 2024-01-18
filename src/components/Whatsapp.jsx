@@ -2,8 +2,8 @@ import React from 'react'
 import { FaWhatsapp } from "react-icons/fa";
 
 const Whatsapp = () => {
-    const phoneNumber = '+254780958065'; // Replace with your actual phone number
-    const message = 'Hello%20there!'; // Replace with your desired message
+    const phoneNumber = '+254780958065';
+    const message = ''; 
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 
     const handleDivClick = () => {
