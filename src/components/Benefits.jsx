@@ -81,7 +81,7 @@ const Benefits = () => {
         <h1 className='text-center text-2xl font-bold text-primary'>Unsure about which structure is right for you?</h1>
         <p className='text-center lg:px-48 px-8 text-black'>Get clarity by scheduling a free 30-minute consulation on starting your company in Kenya. <br/>We can advise you on anything from the optimal business structure, capital, investment, full <br/> foreign ownership options to shareholder requirements and more</p>
         <div>
-          <button className='rounded-full border-2 border-primary text-black'>Schedule a discovery call</button>
+          <button className='rounded-full border-2 border-primary bg-primary hover:bg-white text-white hover:text-primary'>Schedule a discovery call</button>
         </div>
       </div>
       <Breaker/>
