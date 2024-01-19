@@ -12,7 +12,7 @@ const New = () => {
           <p className='lg:text-left text-center font-secondary lg:w-3/4'>We provide a full suite of flexible company services, including company formation, registered offices facilities, statutory compliance and document filing with the appropriate authorities. We also have resident directors and shareholders available, if required. These are backed by legal documents to ensure that you retain ownership & control over your company.</p>
        </div>
        <div className='space-y-8 text-black'>
-         <div className='w-full lg:h-screen bg-white rounded-xl pt-6 p-8 py-8 '>
+         <div className='w-full lg:h-screen bg-white rounded-xl pt-6 lg:p-8 p-2 py-8 '>
          <div className='flex flex-col justify-start space-y-16'>
          <h3 className='text-3xl font-semibold font-primary text-primary'>Essential company services.</h3>
          <div className='flex w-full gap-2 font-secondary'>
@@ -55,7 +55,7 @@ const New = () => {
          </div>
          </div>
          </div>
-         <div className='w-full lg:h-[900px] bg-white rounded-xl pt-12 p-8 py-2'>
+         <div className='w-full lg:h-[900px] bg-white rounded-xl pt-12 lg:p-8 p-2 py-2'>
          <div className='flex flex-col justify-start space-y-8'>
          <h3 className='text-3xl font-semibold font-primary text-primary'>Additional compliance services.</h3>
          <p className='font-secondary'>We also provide one-off and ongoing services to keep your business compliant with all the government requirements.</p>

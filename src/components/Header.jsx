@@ -4,21 +4,26 @@ import world from '../assets/world.svg'
 import { IoMenu } from "react-icons/io5"
 import {SlArrowDown } from 'react-icons/sl'
 import { CiMenuKebab } from "react-icons/ci";
+import Services2 from './Services2'
 import Services from './Services'
 
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isSolutions, setIsSolution] = useState(false);
+
+  const handleClick = (prevState)=>{
+   setIsHovered(!prevState)
+  }
   return(
     <header
-     className={'fixed top-0 group-hover:h-screen h-28 bg-white left-0 w-full lg:px-24 px-6 z-10'}>
+     className={'fixed top-0  h-28 bg-white left-0 w-full lg:px-24 px-6 z-10'}>
        <div className=' flex  justify-between items-center flex-row  '>
          <div className='flex justify-between gap-16'>
-           <img src={logo} className='w-36 h-36'/>
+           <img src={logo} className='lg:w-36 w-28 lg:h-36 h-28'/>
            <nav className={`${ 'text-primary text-md font-secondary'} lg:flex gap-x-8 font-tertiary tracking-[3px] text-[15px] items-center lg:gap-x-8 hidden lg:block`}>
-           <a href='/' className={`text-primary hover:text-black flex gap-2`} onClick={() => setIsHovered(true)} >
+           <a href='/' className={`text-primary hover:text-black flex gap-2`} onClick={() => setIsHovered(prevState => !prevState)} >
             Services
-            <CiMenuKebab size={20} className=' transition-all duration-100 mt-1' onClick={() => setIsHovered(true)}  /> 
+            <CiMenuKebab size={20} className=' transition-all duration-100 mt-1' onClick={() => setIsHovered(prevState => !prevState)}  /> 
            </a>
            {isHovered && 
             <div className='absolute top-28 left-0 w-full h-[430px] bg-white z-10 shadow-xl p-8'>
@@ -71,7 +76,22 @@ const Header = () => {
         
         {/*small devices*/}
           <div className='block lg:hidden'>
-             <IoMenu size={30} className='text-primary border-primary'/>
+             <IoMenu size={30} className='text-primary border-primary z-10' onClick={() => setIsHovered(prevState => !prevState)}/>
+             {isHovered && 
+             <div className='absolute top-28 right-0 h-screen w-56 bg-primary'>
+                <ul className='flex flex-col p-4'>
+                  <li>Services
+                    <Services2/>
+                  </li>
+                  <li>Solutions</li>
+                  <li>Pricing</li>
+                  <li>About</li>
+                </ul>
+             </div>
+            // <div className='absolute top-28 left-0 w-full h-[430px] bg-white z-10 shadow-xl p-8'>
+            //   <Services/>
+            // </div>
+              }
           </div>
        </div>
 

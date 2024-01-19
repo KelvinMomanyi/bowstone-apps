@@ -67,7 +67,7 @@ const Faq = () => {
 
   return (
     <div className='text-primary lg:px-72 px-4 py-8'>
-        <div className='flex flex-col justify-center items-center py-8'>
+        <div className='flex flex-col justify-center items-center text-center py-8'>
             <span className='font-primary'>FAQ</span>
             <h1 className='text-4xl font-semibold font-secondary'>Common Questions</h1>
 

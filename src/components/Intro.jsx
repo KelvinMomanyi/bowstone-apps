@@ -65,6 +65,7 @@ const Intro = () => {
          </div>
         </div>
         <div className='py-4 sm:w-1/2 w-full' >
+      
           <img src={World} className='w-full h-auto'/>
           {/* <ParticlesContainer/> */}
         </div>
