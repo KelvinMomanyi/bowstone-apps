@@ -6,6 +6,7 @@ import {SlArrowDown } from 'react-icons/sl'
 import { CiMenuKebab } from "react-icons/ci";
 import Services2 from './Services2'
 import Services from './Services'
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -78,10 +79,14 @@ const Header = () => {
           <div className='block lg:hidden'>
              <IoMenu size={30} className='text-primary border-primary z-10' onClick={() => setIsHovered(prevState => !prevState)}/>
              {isHovered && 
-             <div className='absolute top-28 right-0 h-screen w-56 bg-primary'>
+             <div className='absolute top-0 right-0 h-screen w-56 bg-primary'>
+                 <div className='w-full flex flex-col justify-end items-end p-4'>
+                    <IoIosCloseCircleOutline size={25} color='white' onClick={() => setIsHovered(prevState => !prevState)}/>
+                 </div>
                 <ul className='flex flex-col p-4'>
                   <li>Services
-                    <Services2/>
+                    <div className='px-4'><Services2/></div>
+                    
                   </li>
                   <li>Solutions</li>
                   <li>Pricing</li>
