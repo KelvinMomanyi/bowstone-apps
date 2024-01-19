@@ -80,7 +80,7 @@ const Header = () => {
           <div className='block lg:hidden'>
              <IoMenu size={30} className='text-primary border-primary z-10' onClick={() => setIsHovered(prevState => !prevState)}/>
              {isHovered && 
-             <div className='absolute top-0 right-0 h-screen w-56 bg-primary'>
+             <div className='absolute top-0 right-0 h-screen w-56 bg-primary overflow-y-scroll'>
                  <div className='w-full flex flex-col justify-end items-end p-4'>
                     <IoIosCloseCircleOutline size={25} color='white' onClick={() => setIsHovered(prevState => !prevState)}/>
                  </div>

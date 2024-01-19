@@ -14,7 +14,7 @@ const Services2 = () => {
       <div className='flex flex-col'>
         <h3 className='underline underline-offset-4 font-primary' onClick={() => setItsOn((prevState) => !prevState)}>OPTIMISE & EXPAND</h3>
         {itsOn &&
-        <>
+        <div className='px-2'>
         <h1 className='text-lg font-semibold font-secondary'>Advisory.</h1>
         <ul className='text-sm font-secondary'>
           <li>Business consulting</li>
@@ -29,13 +29,13 @@ const Services2 = () => {
           <li>ESG advisory</li>
           <li>Communications, crisis & change management</li>
         </ul>
-        </>
+        </div>
         }
       </div>
       <div className='flex flex-col '>
             <h3 className=' underline underline-offset-4 font-primary' onClick={() => setItsOn1((prevState) => !prevState)}>STAY COMPLIANT & GROW</h3>
               {itsOn1 &&
-              <div>
+              <div className='px-2'>
                <h1 className='text-lg font-semibold font-secondary'>Administration.</h1>
                <h2 className='font-secondary'>Corporate governance.</h2>
                <ul  className='text-sm font-secondary'>
@@ -69,7 +69,7 @@ const Services2 = () => {
       <div className='flex flex-col'>
         <h3 className=' underline underline-offset-4 font-primary flex' onClick={() => setItsOn2((prevState) => !prevState)}>LAUNCH & IMPLEMENT</h3>
         {itsOn2 &&
-        <>
+        <div className='px-2'>
         <h1 className='text-lg font-semibold font-secondary'>Formation</h1>
         <ul className='font-secondary text-sm'>
           <li>Company registration</li>
@@ -88,7 +88,7 @@ const Services2 = () => {
           <li>Estate planning</li>
           <li>Family offices</li>
         </ul>
-        </>}
+        </div>}
       </div>
     </div>
   )
