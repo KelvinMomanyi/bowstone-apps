@@ -8,6 +8,7 @@ import Services2 from './Services2'
 import Services from './Services'
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
+
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isSolutions, setIsSolution] = useState(false);
@@ -83,7 +84,7 @@ const Header = () => {
                  <div className='w-full flex flex-col justify-end items-end p-4'>
                     <IoIosCloseCircleOutline size={25} color='white' onClick={() => setIsHovered(prevState => !prevState)}/>
                  </div>
-                <ul className='flex flex-col p-4'>
+                <ul className='flex flex-col p-4  text-white font-secondary'>
                   <li>Services
                     <div className='px-4'><Services2/></div>
                     
