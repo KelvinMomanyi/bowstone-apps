@@ -9,8 +9,8 @@ const serviceList = [
 
 const Benefits = () => {
   return (
-    <div className='w-full lg:pt-96 pt-[1100px] h-96 bg-white/70'>
-      <div className='w-full flex flex-col justify-center items-center py-8 space-y-4'>
+    <div  className='w-full lg:pt-96 pt-[1100px] h-96 bg-white/70'>
+      <div id='pricing' className='w-full flex flex-col justify-center items-center py-8 space-y-4'>
         <h2 className='text-lg text-black font-primary'>Company Registration Options</h2>
         <h1 className='text-3xl text-primary px-2 font-secondary'>Select the best structure for your business</h1>
         <p className='text-center lg:px-96 px-24 text-black font-secondary'>We can reliably help you navigate the process of registering a new company in Hong Kong, whether you are expanding from overseas or are local or a resident.You can choose from serveral strructues. The most popular being:</p>

@@ -16,6 +16,16 @@ const Header = () => {
   const handleClick = (prevState)=>{
    setIsHovered(!prevState)
   }
+
+
+  const scrollToComponent = () => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+
+      targetElement.scrollTo({behavior: 'smooth' });
+    }
+  }
+
   return(
     <header
      className={'fixed top-0  h-28 bg-white left-0 w-full lg:px-24 px-6 z-10'}>
@@ -41,10 +51,10 @@ const Header = () => {
               Solutions
             </div>
            }
-            <a href='/rooms' className={`text-primary hover:text-black`}>
+            <a href={'#pricing'} className={`text-primary hover:text-black`}>
            Pricing   
             </a> 
-            <a href='/rooms' className={`text-primary  hover:text-black flex`}>
+            <a href='#' className={`text-primary  hover:text-black flex`}>
               About    
             </a>
             {/* <a href='/blog' className={`text-blue-600`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
