@@ -2,8 +2,8 @@ import React from 'react'
 
 const Solutions = () => {
   return (
-    <div className='w-full h-full flex flex-col items-center p-8'>
-        <ul className='text-white list-disc'>
+    <div className='w-full h-full flex flex-col items-center px-4 py-2'>
+        <ul className='text-white list-disc cursor-pointer'>
           <li>Regional Expansion</li>
           <li>Going Public in Kenya</li>
           <li>ERP & CRM Solutions</li>

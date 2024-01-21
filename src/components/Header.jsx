@@ -8,17 +8,24 @@ import Services2 from './Services2'
 import Services from './Services'
 import Solutions from './Solutions'
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import { IoIosCloseCircle } from "react-icons/io";
 
 
 
 const Header = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [isSolutions, setIsSolution] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
 
   const handleClick = (prevState)=>{
    setIsHovered(!prevState)
   }
 
+ 
+
+  const handleOpen = () => {
+    setIsRotated((prev) => !prev);
+  };
 
   const scrollToComponent = () => {
     const targetElement = document.getElementById(targetId);
@@ -42,15 +49,13 @@ const Header = () => {
              <a href={'#solutions'}  className={`text-primary hover:text-black flex gap-2`} >
               Solutions 
              </a>
-             <SlArrowDown size={10} className='hover:rotate-180 transition-all duration-100 mt-1' onMouseEnter={() => setIsSolution(true)} onMouseLeave={() => setIsSolution(false)} /> 
+             <SlArrowDown size={10} className='active:rotate-180 transition-all duration-100 mt-1' onClick={() => setIsSolution(prevState => !prevState)}  /> 
            </div>
            {isSolutions && 
-            <div className='absolute top-24 z-10 w-64 h-96 bg-primary'>
+            <div className='absolute top-24 z-10 w-64 h-72 bg-primary border-b-2 rounded-b-md'>
               <Solutions/>
             </div>
            }
-       
-           
            <a href={'#pricing'} className={`text-primary hover:text-black`}>
                Pricing   
            </a>
@@ -64,36 +69,18 @@ const Header = () => {
              <CiMenuKebab size={20} className='hover:text-black mt-1' onClick={() => setIsHovered(prevState => !prevState)}  /> 
            </div>
            {isHovered && 
-            <div className='absolute top-28 left-0 w-full h-[430px] bg-primary z-10 shadow-xl p-8'>
+            <div className='absolute top-28 left-0 w-full h-[470px] bg-primary z-10 shadow-xl p-8'>
+              <div className='w-full flex justify-end'>
+                <IoIosCloseCircle size={30} color='white' onClick={() => setIsHovered(prevState => !prevState)}/>
+              </div>
               <Services/>
             </div>
            }
-       
-          
-           
-           
-            {/* <a href='/blog' className={`text-blue-600`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-               Blog
-             </a> */}
-             <a className='py-1 cursor-pointer'>
-               {/* <SlArrowDown size={10} className='group-hover:text-accent' /> */}
-             </a>  
-             <div className="w-full bg-blue-600 w-48 h-auto rounded-b-sm border-b-2 border-accent  p-4 shadow-xl top-10 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className='flex flex-col gap-2'>
-                   <a href='/blog' className='hover:text-accent transition'>
-                   Blog   
-                  </a>
-                  <a href='/blog/1' className='hover:text-accent transition'>
-                    Blog Details   
-                  </a>
-                </div>
-             </div>
-
            </nav>
          </div>
 
          <div className='flex gap-12 hidden lg:flex'>
-            <div className=' rounded-full border-2 border-primary py-2 px-4 text-black font-secondary'>
+            <div className=' rounded-full border-2 border-primary py-2 px-4 text-black font-secondary cursor-pointer'>
               Contact Us
             </div>
             <div className='pt-1'>
@@ -110,18 +97,39 @@ const Header = () => {
                     <IoIosCloseCircleOutline size={25} color='white' onClick={() => setIsHovered(prevState => !prevState)}/>
                  </div>
                 <ul className='flex flex-col p-4  text-white font-secondary'>
+                  <li>
+                    <a href='#' className={`text-white  hover:text-black flex`}>
+                      About    
+                     </a>
+                  </li>
+                  <li>
+                    <a href={'#pricing'} className={`text-white hover:text-black`}>
+                      Pricing   
+                    </a>
+                  </li>
                   <li>Services
                     <div className='px-4'><Services2/></div>
-                    
                   </li>
-                  <li>Solutions</li>
-                  <li>Pricing</li>
-                  <li>About</li>
+                  <li>
+                    <div className='flex gap-2 mt-4'>
+                    Solutions
+                    <SlArrowDown size={10} className='active:rotate-180 transition-all duration-100 mt-1' onClick={() => setIsSolution(prevState => !prevState)}  />
+                    </div>
+                  {isSolutions &&
+                  <div className=' top-24 z-10 w-64 pl-2 px-8 h-72 bg-primary border-b-2 rounded-b-md'>
+                    <Solutions/>
+                  </div>
+                  }
+                  </li>
                 </ul>
+                <div className=''>
+                <div className='flex flex-col gap-12 w-1/2 items-center justify-center'>
+                   <div className=' rounded-full border-2 border-white py-2 px-2 text-white font-secondary cursor-pointer'>
+                     Contact Us
+                   </div>
+              </div> 
+              </div>
              </div>
-            // <div className='absolute top-28 left-0 w-full h-[430px] bg-white z-10 shadow-xl p-8'>
-            //   <Services/>
-            // </div>
               }
           </div>
        </div>

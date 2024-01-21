@@ -16,7 +16,7 @@ const Services2 = () => {
         {itsOn &&
         <div className='px-2'>
         <h1 className='text-lg font-semibold font-secondary'>Advisory.</h1>
-        <ul className='text-sm font-secondary'>
+        <ul className='text-sm font-secondary list-disc'>
           <li>Business consulting</li>
           <li>Tax advisory & planning</li>
           <li>Pre-IPO advisory</li>
@@ -38,21 +38,21 @@ const Services2 = () => {
               <div className='px-2'>
                <h1 className='text-lg font-semibold font-secondary'>Administration.</h1>
                <h2 className='font-secondary'>Corporate governance.</h2>
-               <ul  className='text-sm font-secondary'>
-               <li>Company secretary</li>
-              <li>Company dissolution</li>
-              <li>BVI company dissolution</li>
-              <h2 className='font-semibold py-2'>CUSTODIAL</h2>
-              <li>Process agent</li>
-              <li>Document authentication</li>
-              <h2 className='font-semibold text-lg py-2'>Accounting.</h2>
-              <li>Accounting services</li>
-               <h2 className='font-semibold text-lg py-2'>Tax.</h2>
-              <li>Tax compliance</li>
-              <li>Tax advisory & planning</li>
+               <ul  className='text-sm font-secondary list-disc'>
+                 <li>Company secretary</li>
+                 <li>Company dissolution</li>
+                 <li>BVI company dissolution</li>
+                 <h2 className='font-semibold py-2'>CUSTODIAL</h2>
+                 <li>Process agent</li>
+                 <li>Document authentication</li>
+                 <h2 className='font-semibold text-lg py-2'>Accounting.</h2>
+                 <li>Accounting services</li>
+                 <h2 className='font-semibold text-lg py-2'>Tax.</h2>
+                 <li>Tax compliance</li>
+                 <li>Tax advisory & planning</li>
                </ul>
                <h2 className='text-lg font-semibold font-secondary'>HR outsourcing.</h2>
-               <ul  className='text-sm font-secondary'>
+               <ul  className='text-sm font-secondary list-disc'>
                  <li>Payroll outsourcing</li>
                  <li>HR administration</li>
                  <li>PEO/Employer of record</li>
@@ -71,7 +71,7 @@ const Services2 = () => {
         {itsOn2 &&
         <div className='px-2'>
         <h1 className='text-lg font-semibold font-secondary'>Formation</h1>
-        <ul className='font-secondary text-sm'>
+        <ul className='font-secondary text-sm list-disc'>
           <li>Company registration</li>
           <li>Private limited company</li>
           <li>Representative office</li>
@@ -84,7 +84,7 @@ const Services2 = () => {
         </ul>
         {/* <h2>PRESERVE WEALTH</h2> */}
         <h1 className='text-lg font-semibold'>Private clients.</h1>
-        <ul>
+        <ul className='list-disc'>
           <li>Estate planning</li>
           <li>Family offices</li>
         </ul>

@@ -12,8 +12,8 @@ const Benefits = () => {
     <div  className='w-full lg:pt-96 pt-[1100px] h-96 bg-white/70'>
       <div id='pricing' className='w-full flex flex-col justify-center items-center py-8 space-y-4'>
         <h2 className='text-lg text-black font-primary'>Company Registration Options</h2>
-        <h1 className='text-3xl text-primary px-2 font-secondary'>Select the best structure for your business</h1>
-        <p className='text-center lg:px-96 px-24 text-black font-secondary'>We can reliably help you navigate the process of registering a new company in Hong Kong, whether you are expanding from overseas or are local or a resident.You can choose from serveral strructues. The most popular being:</p>
+        <h1 className='text-3xl text-primary px-2 font-secondary text-center'>Select the best structure for your business</h1>
+        <p className='text-center lg:px-96 px-12 text-black font-secondary'>We can reliably help you navigate the process of registering a new company in Hong Kong, whether you are expanding from overseas or are local or a resident.You can choose from serveral strructues. The most popular being:</p>
       </div>
       <div className='flex sm:flex-row flex-col gap-4 w-full lg:px-48 px-4'>
         <div className='lg:w-1/3 h-[600px] bg-white flex flex-col border-b border-4 border-b-primary  p-4 rounded-xl text-primary'>
