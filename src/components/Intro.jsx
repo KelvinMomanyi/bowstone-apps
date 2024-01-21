@@ -71,7 +71,7 @@ const Intro = () => {
         </div>
       </div>
 
-      <div className='w-full pt-24  h-[400px] '>
+      <div id='solutions' className='w-full pt-24  h-[400px] '>
         <div className='flex flex-col justify-start items-start py-8'>
           <h1 className='text-start text-3xl text-primary font-primary'>Start your dream business in Kenya <br/> with Confidence.</h1>
         </div>

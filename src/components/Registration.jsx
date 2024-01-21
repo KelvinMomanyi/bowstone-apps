@@ -3,7 +3,8 @@ import business from '../assets/business.jpg'
 
 const Registration = () => {
   return (
-    <div className='w-full h-auto lg:px-56 px-6 pt-24'>
+   <div id='registration' className='py-4'>
+    <div  className='w-full h-auto lg:px-56 px-6 pt-24'>
         <h3 className='font-primary text-lg '>Registration process</h3>
       <div className='flex lg:flex-row flex-col gap-4 font-secondary '>
         <div  className='lg:w-1/3'>
@@ -44,6 +45,7 @@ const Registration = () => {
         </div>
       </div>
     </div>
+   </div> 
   )
 }
 
