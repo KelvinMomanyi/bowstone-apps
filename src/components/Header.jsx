@@ -40,14 +40,17 @@ const Header = () => {
      className={'fixed top-0  h-28 bg-white left-0 w-full lg:px-24 px-6 z-10'}>
        <div className=' flex  justify-between items-center flex-row  '>
          <div className='flex justify-between gap-16'>
-             <img src={logo} className='lg:w-36 w-28 lg:h-36 h-28'  onClick={()=>{window.scrollTo(0,0)}}/>
+          <a href="/">
+             <img src={logo} className='lg:w-36 w-28 lg:h-36 h-28'  onClick={()=>{window.scrollTo(0,0)}}/> 
+          </a>      
+             
            <nav className={`${ 'text-primary text-md font-secondary'} lg:flex gap-x-8 font-tertiary tracking-[3px] text-[15px] items-center lg:gap-x-8 hidden lg:block`}>
-           <a href='#' className={`text-primary  hover:text-black flex`}>
-              About    
+           <a href='/' className={`text-primary  hover:text-black flex`}>
+              Home   
            </a>
            <div className='flex gap-1'>
              <a href={'#solutions'}  className={`text-primary hover:text-black flex gap-2`} >
-              Solutions 
+              About 
              </a>
              <SlArrowDown size={10} className='active:rotate-180 transition-all duration-100 mt-1' onClick={() => setIsSolution(prevState => !prevState)}  /> 
            </div>
@@ -80,8 +83,10 @@ const Header = () => {
          </div>
 
          <div className='flex gap-12 hidden lg:flex'>
-            <div className=' rounded-full border-2 border-primary py-2 px-4 text-black font-secondary cursor-pointer'>
-              Contact Us
+            <div className=' rounded-full border-2 border-primary py-2 px-4  font-secondary cursor-pointer'>
+                <a href='/contact' className='text-black'>
+                  Contact Us
+                </a>
             </div>
             <div className='pt-1'>
                <img src={world} className='w-8 h-8'/>
@@ -98,21 +103,13 @@ const Header = () => {
                  </div>
                 <ul className='flex flex-col p-4  text-white font-secondary'>
                   <li>
-                    <a href='#' className={`text-white  hover:text-black flex`}>
-                      About    
+                    <a href='/' className={`text-white  hover:text-black flex`}>
+                      Home    
                      </a>
                   </li>
                   <li>
-                    <a href={'#pricing'} className={`text-white hover:text-black`}>
-                      Pricing   
-                    </a>
-                  </li>
-                  <li>Services
-                    <div className='px-4'><Services2/></div>
-                  </li>
-                  <li>
-                    <div className='flex gap-2 mt-4'>
-                    Solutions
+                    <div className='flex gap-2 cursor-pointer'>
+                    About
                     <SlArrowDown size={10} className='active:rotate-180 transition-all duration-100 mt-1' onClick={() => setIsSolution(prevState => !prevState)}  />
                     </div>
                   {isSolutions &&
@@ -121,11 +118,22 @@ const Header = () => {
                   </div>
                   }
                   </li>
+                  <li>
+                    <a href={'#pricing'} className={`text-white hover:text-black`}>
+                      Pricing   
+                    </a>
+                  </li>
+                  <li className='cursor-pointer'>Services
+                    <div className='px-4 cursor-pointer'><Services2/></div>
+                  </li>
+                  
                 </ul>
                 <div className=''>
                 <div className='flex flex-col gap-12 w-1/2 items-center justify-center'>
-                   <div className=' rounded-full border-2 border-white py-2 px-2 text-white font-secondary cursor-pointer'>
-                     Contact Us
+                  <div className='rounded-full border-2 border-white py-2 px-2 text-white font-secondary cursor-pointer'> 
+                     <a href='/contact' className='text-white'>
+                        Contact Us
+                     </a>
                    </div>
               </div> 
               </div>

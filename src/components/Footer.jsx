@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='flex flex-col w-full justify-center items-center text-center space-y-2 text-black'>
         <h1 className='text-4xl font-primary'>Can we help you advance in Kenya?</h1>
         <h3 className='font-secondary'>Contact us to discover your options.</h3>
-        <button className='font-secondary border-primary rounded-full bg-primary hover:bg-white hover:text-primary text-white'>View your Locations</button>
+        <a href='/contact'className='font-secondary border-primary rounded-full bg-primary hover:bg-white hover:text-primary text-white p-3'>Get in touch Now</a>
 
       </div>
       <div className='flex flex-col lg:items-start items-center'>
@@ -18,7 +18,7 @@ const Footer = () => {
         
           <span className='font-secondary py-4 text-black'>+254 78 095 8065</span>
           <div className='w-1/2 flex flex-col lg:justify-start justify-center lg:items-start items-center'>
-            <button className='rounded-full bg-primary hover:bg-white text-white hover:text-primary border-primary '>Email Us</button>
+            <a href='/contact' className='rounded-full bg-primary hover:bg-white text-white hover:text-primary border-primary p-3 cursor-pointer'>Email Us</a>
           </div>
 
         </div>

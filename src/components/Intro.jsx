@@ -60,8 +60,8 @@ const Intro = () => {
          <h1 className='py-2 font-semibold text-black font-primary'>Advance your <br/><span className='text-primary'>{text}</span>  in Kenya</h1>
          <p className='text-primary font-secondary text-xl'>Our company registration services makes it easy for foreign established businesses(both private & listed) to set up and manage their company in Kenya.</p>
          <div className='flex gap-8 py-6'>
-          <button className='rounded-full bg-primary hover:bg-transparent hover:text-primary text-white font-secondary '>Request a Quote</button>
-          <span className='hover:underline py-4 text-black cursor-pointer font-secondary '>Learn More</span>
+          <a href='/quote' className='rounded-full bg-primary hover:bg-transparent hover:text-primary text-white font-secondary cursor-pointer text-center p-4'>Request a Quote</a>
+          <a href='#solutions' className='hover:underline py-4 text-black cursor-pointer font-secondary '>Learn More</a>
          </div>
         </div>
         <div className='py-4 sm:w-1/2 w-full' >

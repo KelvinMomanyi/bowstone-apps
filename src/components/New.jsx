@@ -51,7 +51,7 @@ const New = () => {
          </div>
 
          <div className='rounded-full'>
-            <button className='rounded-full bg-primary text-white hover:text-primary hover:bg-transparent font-secondary'>Get a Quote</button>
+            <a href='/quote' className=' bg-primary text-white hover:text-primary hover:bg-transparent font-secondary p-3 rounded-full'>Get a Quote</a>
          </div>
          </div>
          </div>
@@ -118,7 +118,7 @@ const New = () => {
            </div>
 
           <div className='rounded-full'>
-             <button className='rounded-full bg-primary text-white hover:text-primary hover:bg-transparent font-secondary'>Get a Quote</button>
+             <a href='/quote' className='rounded-full bg-primary text-white hover:text-primary hover:bg-transparent font-secondary p-3'>Get a Quote</a>
           </div>
           </div>
          </div>     
