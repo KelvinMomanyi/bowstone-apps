@@ -108,11 +108,11 @@ const Quote = () => {
      <input type="text"className='border border-primary py-2 px-4' placeholder='Im interested in' />
     
      <input type="text" className='border border-primary py-2 px-4' placeholder='Company name' />
-     <span>Project Details</span>
+     <span className='text-black'>Project Details</span>
      <textarea type="text" className='border border-primary py-2 px-4' rows="4" cols="20"/>
-     <div className='flex gap-4'>
+     <div className='flex lg:flex-row flex-col gap-4'>
        <div className='flex flex-col relative'>
-         <span>Revenue</span>
+         <span className='text-black'>Revenue</span>
          <input type="text" className='border border-primary py-1 px-4 relative' value={selectedOption}/>
           <MdOutlineKeyboardArrowDown className='absolute top-8 right-2' onClick={toggleDropdown}/>
          {isDropdownOpen && (
@@ -137,7 +137,7 @@ const Quote = () => {
          )} 
        </div>
        <div className='flex flex-col relative'>
-         <span>Employees</span>
+         <span className='text-black'>Employees</span>
          <input type="text" className='border border-primary py-1 px-4' value={selectedOption1}/>
          <MdOutlineKeyboardArrowDown className='absolute top-8 right-2' onClick={toggleDropdown1}/>
          {isDropdownOpen1 && (
@@ -167,13 +167,13 @@ const Quote = () => {
          )} 
        </div>
      </div>
-     <h3 className='text-xl font-secondary'>How can we contact you?</h3>
+     <h3 className='text-xl font-secondary text-black'>How can we contact you?</h3>
      <div className='flex flex-col gap-4'>
-       <div className='flex gap-4'>
+       <div className='flex lg:flex-row flex-col gap-4'>
          <input type="text" className='border border-primary py-1 px-4' placeholder='First Name' />
          <input type="text" className='border border-primary py-1 px-4'  placeholder='Last Name'/>
        </div>
-       <div className='flex gap-4'>
+       <div className='flex lg:flex-row flex-col gap-4'>
          <input type="text" className='border border-primary py-1 px-4' placeholder='Business Email' />
          <input type="text" className='border border-primary py-1 px-4' placeholder='Phone'/>
        </div>

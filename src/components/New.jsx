@@ -2,7 +2,7 @@ import React from 'react'
 
 const New = () => {
   return (
-    <div  className='w-full lg:h-[2000px] h-[3200px] bg-primary'>
+    <div  className='w-full lg:h-[2000px] h-2500px] bg-primary'>
       <div id='services'  className='lg:px-56 px-4 flex flex-col justify-center py-10'> 
        <div className='flex justify-start py-2'>
           <h2 className='text-white font-primary text-lg'>Complete company services</h2>
@@ -55,7 +55,7 @@ const New = () => {
          </div>
          </div>
          </div>
-         <div className='w-full lg:h-[900px] bg-white rounded-xl pt-12 lg:p-8 p-2 py-2'>
+         <div className='w-full lg:h-[900px] h-auto bg-white rounded-xl pt-12 lg:p-8 p-2 py-2'>
          <div className='flex flex-col justify-start space-y-8'>
          <h3 className='text-3xl font-semibold font-primary text-primary'>Additional compliance services.</h3>
          <p className='font-secondary'>We also provide one-off and ongoing services to keep your business compliant with all the government requirements.</p>
@@ -117,7 +117,7 @@ const New = () => {
              </div>
            </div>
 
-          <div className='rounded-full'>
+          <div className='rounded-full pb-2'>
              <a href='/quote' className='rounded-full bg-primary text-white hover:text-primary hover:bg-transparent font-secondary p-3'>Get a Quote</a>
           </div>
           </div>
