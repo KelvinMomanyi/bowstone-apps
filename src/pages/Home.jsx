@@ -63,14 +63,14 @@ const Home = () => {
     <>
      <div className=''>
       <Intro/>
-      <Benefits/>
+      <Benefits/> 
      </div>
-     <Breaker/>
+     {/* <Breaker/> */}
      <Ownership/>
      <Registration/>
-     <Breaker/>
+     {/* <Breaker/>
      <New/>
-     <Breaker2/>
+     <Breaker2/> */}
      <Faq/>
 
      <Poster/> 

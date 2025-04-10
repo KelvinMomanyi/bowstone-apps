@@ -3,8 +3,8 @@ import Logo from '../assets/logo.svg'
 
 const Footer = () => {
   return (
-    <div className='w-full h-[550px] pt-10 z-0 bg-white sm:px-48 px-4'>
-      <div className='flex flex-col w-full justify-center items-center text-center space-y-2 text-black'>
+    <div className='w-full h-auto pt-10 z-0 bg-white sm:px-48 px-4'>
+      {/* <div className='flex flex-col w-full justify-center items-center text-center space-y-2 text-black'>
         <h1 className='text-4xl font-primary'>Can we help you advance in Kenya?</h1>
         <h3 className='font-secondary'>Contact us to discover your options.</h3>
         <a href='/contact'className='font-secondary border-primary rounded-full bg-primary hover:bg-white hover:text-primary text-white p-3'>Get in touch Now</a>
@@ -51,9 +51,9 @@ const Footer = () => {
             <li>IPO guides</li>
            </ul>
         </div>
-      </div>
+      </div> */}
       <div className='w-full flex flex-col justify-center items-center py-4'>
-         <h2 className='font-secondary text-primary'>© Muhami Solutions 2024. All rights reserved.</h2>
+         <h2 className='font-secondary text-primary'>© Bowstone apps 2025. All rights reserved.</h2>
       </div>
     </div>
   )

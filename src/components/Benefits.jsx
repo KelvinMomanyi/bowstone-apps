@@ -1,91 +1,64 @@
 import React from 'react'
 import Breaker from './Breaker'
 
-
-const serviceList = [
-
-]
-
-
 const Benefits = () => {
   return (
-    <div  className='w-full lg:pt-96 pt-[1100px] h-96 bg-white/70'>
-      <div id='pricing' className='w-full flex flex-col justify-center items-center py-8 space-y-4'>
-        <h2 className='text-lg text-black font-primary'>Company Registration Options</h2>
-        <h1 className='text-3xl text-primary px-2 font-secondary text-center'>Select the best structure for your business</h1>
-        <p className='text-center lg:px-96 px-12 text-black font-secondary'>We can reliably help you navigate the process of registering a new company in Hong Kong, whether you are expanding from overseas or are local or a resident.You can choose from serveral strructues. The most popular being:</p>
+    <div id='pricing' className='w-full h-auto bg-white/70'>
+      <div id='features' className='w-full flex flex-col justify-center items-center py-8 space-y-4'>
+        <h2 className='text-lg text-black font-primary'>Pricing Plans</h2>
+        <h1 className='text-3xl text-primary px-2 font-secondary text-center'>
+          Flexible Plans for Every Shopify Store
+        </h1>
+        <p className='text-center lg:px-96 px-12 text-black font-secondary'>
+          Whether you're just starting out or scaling your store, our pricing plans are built to support your journey—with no hidden fees and zero coding required.
+        </p>
       </div>
-      <div className='flex sm:flex-row flex-col gap-4 w-full lg:px-48 px-4'>
-        <div className='lg:w-1/3 h-[600px] bg-white flex flex-col border-b border-4 border-b-primary  p-4 rounded-xl text-primary'>
+
+      <div className='flex w-full items-center justify-center sm:flex-row flex-col gap-4 w-full lg:px-48 px-4'>
+      
+
+        {/* Pro Plan */}
+        <div className='lg:w-1/3 2/3 h-[600px] flex flex-col p-4 bg-primary border-b border-4 border-b-blue-400 rounded-xl text-white'>
           <div className='flex flex-col justify-center items-center'>
-            <h2 className='text-2xl font-semibold p-2 font-primary '>Private Limited Company</h2>
-            <p className='text-center font-secondary'>Ideal for most local and foreign entities as it offers limited liability, it is fast to set up and supports a work visa</p>
+            <h2 className='text-2xl font-semibold p-2 font-primary'>Full Access Plan</h2>
+            <p className='text-center font-secondary'>
+              Unlock full control with real-time syncing, unlimited carousels, and enhanced design features.
+            </p>
           </div>
-          <ul className="list-disc p-6 font-secondary">
-            <li>Trading Entity </li>
-            <li>No minimum share capital</li>
-            <li>!+ shareholder and director</li>
-            <li>Unrestricted in activities</li>
-            <li>Subject to local compliance</li>
+          <ul className="list-disc p-6 font-secondary flex flex-col justify-center items-center">
+            <li>Unlimited Carousels</li>
+            <li>Sync New Collections</li>
+            <li>Advanced Layouts</li>
+            <li>Full Customization</li>
+            <li>Customer Support</li>
           </ul>
           <div className='w-full flex flex-col justify-center items-center text-center py-4'>
-             <h3 className='text-3xl font-secondary font-semibold'>2 days</h3>
-             <span className='text-lg opacity-40 text-black'>Setup time</span>
+            <h3 className='text-3xl font-secondary font-semibold'>$6.99</h3>
+            <span className='text-lg opacity-40 text-black'>per month</span>
           </div>
           <div className='p-4 flex flex-col items-center'>
-            <a href='/quote' className='bg-primary text-white font-secondary p-3 rounded-full' >Request a Quote</a>
+            <a href='/apps/carousel' className='bg-white text-primary font-secondary p-3 rounded-full'>
+              Start Free Trial
+            </a>
           </div>
         </div>
-        <div className='lg:w-1/3 h-[600px] flex flex-col p-4 bg-primary border-b border-4 border-b-blue-400 rounded-xl text-white'>
-          <div className='flex flex-col justify-center items-center'>
-            <h2  className='text-2xl font-semibold p-2 font-primary '>Foreign branch office</h2>
-            <p className='text-center font-secondary'>Ideal for estabished international companiess wishing to epand heir foeign head office to Kenya</p>
-          </div>
-          <ul className="list-disc p-6 font-secondary">
-            <li>Trading Entity </li>
-            <li>No minimum share capital</li>
-            <li>1 branch manager</li>
-            <li>Unrestricted in activities</li>
-            <li>Subject to local compliance</li>
-          </ul>
-          <div className='w-full flex flex-col justify-center items-center text-center py-4'>
-             <h3 className='text-3xl font-secondary font-semibold'>1 day</h3>
-             <span className='text-lg opacity-40 text-black'>Setup time</span>
-          </div>
-          <div className='p-4 flex flex-col items-center'>
-            <a href='/quote' className='bg-white text-primary font-secondary p-3 rounded-full' >Request a Quote</a>
-          </div>
-        </div>
-        <div className='lg:w-1/3 h-[600px] flex flex-col p-4 bg-white border-b border-4 border-b-blue-600 rounded-xl text-primary'>
-          <div className='flex flex-col justify-center items-center'>
-            <h2  className='text-2xl font-semibold p-2 font-primary'>Representative office</h2>
-            <p className='text-center font-secondary'>Ideal for foreign companies seeking to study the market in Kenya for research and business development purposes</p>
-          </div>
-          <ul className="list-disc p-6 font-secondary">
-            <li>No Trading Entity </li>
-            <li>No minimum share capital</li>
-            <li>1 authorised representative</li>
-            <li>Limited busines activities</li>
-            <li>No local compliance</li>
-          </ul>
-          <div className='w-full flex flex-col justify-center items-center text-center py-4'>
-             <h3 className='text-3xl font-secondary font-semibold'>3-4 weeks</h3>
-             <span className='text-lg opacity-40 text-black'>Setup time</span>
-          </div>
-          <div className='p-4 flex flex-col items-center'>
-            <a href='/quote' className='bg-primary text-white font-secondary p-3 rounded-full'>Request a Quote</a>
-          </div>
-        </div>
+
+       
       </div>
+
+      {/* Support CTA */}
       <div className='flex flex-col justify-center items-center lg:px-8 py-20 space-y-4 font-secondary'>
-        <h1 className='text-center text-2xl font-bold text-primary'>Unsure about which structure is right for you?</h1>
-        <p className='text-center lg:px-48 px-8 text-black'>Get clarity by scheduling a free 30-minute consulation on starting your company in Kenya. <br/>We can advise you on anything from the optimal business structure, capital, investment, full <br/> foreign ownership options to shareholder requirements and more</p>
+        <h1 className='text-center text-2xl font-bold text-primary'>Need help choosing a plan?</h1>
+        <p className='text-center lg:px-48 px-8 text-black'>
+          Book a free call with our team. We’ll help you pick the best plan for your store’s needs and walk you through setup in minutes.
+        </p>
         <div>
-          <a href='/contact' className='rounded-full border-2 border-primary bg-primary hover:bg-white text-white hover:text-primary p-3 rounded-full'>Get in Touch</a>
+          <a href='/contact' className='rounded-full border-2 border-primary bg-primary hover:bg-white text-white hover:text-primary p-3 rounded-full'>
+            Talk to Sales
+          </a>
         </div>
       </div>
-      <Breaker/>
-      <Breaker/>
+
     </div>
   )
 }

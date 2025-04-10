@@ -30,7 +30,7 @@ const App = () => {
     <>
      <Header/>
       <RouterProvider router={router}/> 
-      <Whatsapp/> 
+      {/* <Whatsapp/>  */}
      <Footer/>
     </>
   )

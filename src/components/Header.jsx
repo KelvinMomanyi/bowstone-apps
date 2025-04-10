@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import logo from '../assets/logo.svg'
+import logo1 from '../assets/logg1.png'
 import world from '../assets/world.svg'
 import { IoMenu } from "react-icons/io5"
 import {SlArrowDown } from 'react-icons/sl'
@@ -9,6 +10,7 @@ import Services from './Services'
 import Solutions from './Solutions'
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { IoIosCloseCircle } from "react-icons/io";
+import Bowstone from '../assets/bowstoneLogo.PNG'
 
 
 
@@ -37,61 +39,34 @@ const Header = () => {
 
   return(
     <header
-     className={'fixed top-0  h-28 bg-white left-0 w-full lg:px-24 px-6 z-10'}>
-       <div className=' flex  justify-between items-center flex-row  '>
-         <div className='flex justify-between gap-16'>
+     className={'fixed top-0 bg-white left-0 w-full z-10'}>
+       <div className='flex  justify-between items-center align-center min-h-16 px-6'>
+         <div className='flex justify-between items-center gap-16 '>
           <a href="/">
-             <img src={logo} className='lg:w-36 w-28 lg:h-36 h-28'  onClick={()=>{window.scrollTo(0,0)}}/> 
+              <img src={Bowstone} className='w-48 h-auto'  onClick={()=>{window.scrollTo(0,0)}}/>  
+             {/* <span className='text-xl font-tertiary'>Bowstone <br/> Studios</span> */}
           </a>      
              
-           <nav className={`${ 'text-primary text-md font-secondary'} lg:flex gap-x-8 font-tertiary tracking-[3px] text-[15px] items-center lg:gap-x-8 hidden lg:block`}>
-           <a href='/' className={`text-primary  hover:text-black flex`}>
-              Home   
-           </a>
-           <div className='flex gap-1'>
-             <a href={'#solutions'}  className={`text-primary hover:text-black flex gap-2`} >
-              About 
-             </a>
-             <SlArrowDown size={10} className='active:rotate-180 transition-all duration-100 mt-1' onClick={() => setIsSolution(prevState => !prevState)}  /> 
-           </div>
-           {isSolutions && 
-            <div className='absolute top-24 z-10 w-64 h-72 bg-primary border-b-2 rounded-b-md'>
-              <Solutions/>
-            </div>
-           }
-           <a href={'#pricing'} className={`text-primary hover:text-black`}>
-               Pricing   
-           </a>
-           <a href={'#registration'}  className={`text-primary hover:text-black flex gap-2`} >
-            Registration
-           </a>
-           <div className='flex gap-1'>
-             <a  href={'#services'} className={`text-primary hover:text-black flex gap-2`} >
-               Services
-             </a>
-             <CiMenuKebab size={20} className='hover:text-black mt-1' onClick={() => setIsHovered(prevState => !prevState)}  /> 
-           </div>
-           {isHovered && 
-            <div className='absolute top-28 left-0 w-full h-[470px] bg-primary z-10 shadow-xl p-8'>
-              <div className='w-full flex justify-end'>
-                <IoIosCloseCircle size={30} color='white' onClick={() => setIsHovered(prevState => !prevState)}/>
-              </div>
-              <Services/>
-            </div>
-           }
+           <nav className={`${ 'text-primary text-md font-secondary'} lg:flex gap-x-8  tracking-[3px] text-[15px] items-center lg:gap-x-8 hidden lg:block`}>
+            <a href='/' className={`text-primary  hover:text-black flex`}>
+                Home   
+            </a>
+            <a href={'#pricing'} className={`text-primary hover:text-black`}>
+                Pricing   
+            </a>
+            <a href={'#registration'}  className={`text-primary hover:text-black flex gap-2`} >
+              Documentation
+            </a>
            </nav>
          </div>
 
-         <div className='flex gap-12 hidden lg:flex'>
+          <div className='flex gap-12 hidden lg:flex'>
             <div className=' rounded-full border-2 border-primary py-2 px-4  font-secondary cursor-pointer'>
                 <a href='/contact' className='text-black'>
                   Contact Us
                 </a>
             </div>
-            <div className='pt-1'>
-               <img src={world} className='w-8 h-8'/>
-            </div>
-        </div> 
+        </div>  
         
         {/*small devices*/}
           <div className='block lg:hidden'>
@@ -108,23 +83,12 @@ const Header = () => {
                      </a>
                   </li>
                   <li>
-                    <div className='flex gap-2 cursor-pointer'>
-                    About
-                    <SlArrowDown size={10} className='active:rotate-180 transition-all duration-100 mt-1' onClick={() => setIsSolution(prevState => !prevState)}  />
-                    </div>
-                  {isSolutions &&
-                  <div className=' top-24 z-10 w-64 pl-2 px-8 h-72 bg-primary border-b-2 rounded-b-md'>
-                    <Solutions/>
-                  </div>
-                  }
-                  </li>
-                  <li>
                     <a href={'#pricing'} className={`text-white hover:text-black`}>
                       Pricing   
                     </a>
                   </li>
-                  <li className='cursor-pointer'>Services
-                    <div className='px-4 cursor-pointer'><Services2/></div>
+                  <li className='cursor-pointer'>
+                    Documentation 
                   </li>
                   
                 </ul>

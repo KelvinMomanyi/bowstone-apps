@@ -11,6 +11,7 @@ module.exports = {
       fontFamily: {
         primary: ['Playfair Display', 'sans-serif'],
         secondary: ['Barlow SemiCondensed', 'sans-serif'],
+        tertiary:['Galada', 'sans-serif']
       },
     },
   },
