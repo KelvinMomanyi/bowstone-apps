@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Whatsapp from './components/Whatsapp'
 import Quote from './pages/Quote';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 const router = createBrowserRouter([
    {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
    {
     path:'/quote',
     element:<Quote/>
+   },
+   {
+    path:'/privacy',
+    element:<PrivacyPolicy/>
    },
   ]);
 
