@@ -1,65 +1,72 @@
 import React from "react";
+import useScrollToHash2 from "../components/useScrollToHash2";
 
 const PrivacyPolicy = () => {
+  useScrollToHash2;
+
   return (
-    <div className="max-w-4xl mx-auto px-6 py-12 text-gray-800">
-      <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
+    <div className="max-w-7xl mx-auto px-6 py-12 text-gray-800 pt-20">
+      <h1 className="text-3xl font-bold mb-6 text-primary">Privacy Policy</h1>
 
       <p className="mb-4">
-        Welcome to the Carousel Slider App for Shopify. We are committed to protecting your privacy and handling your data responsibly. This privacy policy outlines what data we collect, how we use it, and your rights as a user.
+        Welcome to our suite of Shopify apps, including AOVBoost, Carousel Slider App, and other tools built by our development studio. We are committed to protecting your privacy and handling your data responsibly. This policy explains what data we collect, how we use it, and your rights as a user.
       </p>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">1. Information We Collect</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2 text-primary">1. Information We Collect</h2>
       <p className="mb-4">
-        We may collect the following information from your store:
+        Depending on the app, we may collect the following data from your Shopify store:
         <ul className="list-disc ml-6 mt-2">
           <li>Store domain and email</li>
           <li>Access scopes granted by the merchant</li>
-          <li>Public product data (used for creating sliders)</li>
+          <li>Public product, order, or customer data (based on app functionality)</li>
+          <li>Usage data to improve user experience</li>
         </ul>
       </p>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">2. How We Use Your Data</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2 text-primary">2. How We Use Your Data</h2>
       <p className="mb-4">
-        We only use your data to provide the functionality of the Carousel Slider App, including:
+        We use collected data solely to deliver and enhance the services provided by our apps, including but not limited to:
         <ul className="list-disc ml-6 mt-2">
-          <li>Displaying product sliders on your storefront</li>
-          <li>Storing preferences for slider configurations</li>
+          <li>Displaying product carousels or upsell recommendations</li>
+          <li>Analyzing store or customer behavior to personalize experiences</li>
+          <li>Storing app configuration preferences</li>
         </ul>
-        We do not sell or share your data with third parties.
+        We do <strong>not</strong> sell, rent, or share your data with third parties.
       </p>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">3. Data Storage & Security</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2 text-primary">3. Data Storage & Security</h2>
       <p className="mb-4">
-        All data is securely stored and encrypted. We use industry-standard practices to safeguard your information.
+        Your data is stored using secure, encrypted methods and is protected using industry-standard security protocols. We take all reasonable steps to prevent unauthorized access or disclosure.
       </p>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">4. Your Rights</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2 text-primary">4. Your Rights</h2>
       <p className="mb-4">
-        You can request to view, update, or delete any of your stored data at any time. If you uninstall the app, we automatically remove all session data related to your store.
+        As a merchant, you may request access to, correction of, or deletion of your data at any time. Uninstalling one of our apps triggers an automated process to remove session-related data from our systems.
       </p>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">5. Contact Us</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2 text-primary">5. Contact Us</h2>
       <p className="mb-4">
-        If you have any questions or concerns, feel free to contact us at:  
-        <a href="mailto:support@yourcarouselapp.com" className="text-blue-600 underline ml-1">support@yourcarouselapp.com</a>
+        For questions or concerns about this privacy policy or your data, contact our support team at:
+        <a href="mailto:kelvinmata42@gmail.com" className="text-blue-600 underline ml-1">
+          kelvinmata42@gmail.com
+        </a>
       </p>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">6. Additional Resources</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2 text-primary">6. Additional Resources</h2>
       <ul className="list-disc ml-6">
         <li>
-          <a href="/faq" className="text-blue-600 underline">
+          <a href="/help/#faq" className="text-blue-600 underline">
             FAQ: Frequently Asked Questions
           </a>
         </li>
         <li>
-          <a href="/help/getting-started" className="text-blue-600 underline">
+          <a href="/help/#getting-started" className="text-blue-600 underline">
             Getting Started Guide
           </a>
         </li>
         <li>
-          <a href="/help/tutorials" className="text-blue-600 underline">
-            Tutorials: Customize your carousel
+          <a href="/help/#tutorials" className="text-blue-600 underline">
+            Tutorials: Customize and optimize your apps
           </a>
         </li>
       </ul>

@@ -11,7 +11,7 @@ import Solutions from './Solutions'
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { IoIosCloseCircle } from "react-icons/io";
 import Bowstone from '../assets/bowstoneLogo.PNG'
-
+import useScrollToHash from './useScrollToHash'
 
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
    setIsHovered(!prevState)
   }
 
- 
+  useScrollToHash();;
 
   const handleOpen = () => {
     setIsRotated((prev) => !prev);
@@ -51,11 +51,17 @@ const Header = () => {
             <a href='/' className={`text-primary  hover:text-black flex`}>
                 Home   
             </a>
-            <a href={'#pricing'} className={`text-primary hover:text-black`}>
+            <a href={'/#pricing'} className={`text-primary hover:text-black`}>
                 Pricing   
             </a>
-            <a href={'#registration'}  className={`text-primary hover:text-black flex gap-2`} >
+            <a href={'/#registration'}  className={`text-primary hover:text-black flex gap-2`} >
               Documentation
+            </a>
+            <a href={'/privacy'}  className={`text-primary hover:text-black flex gap-2`} >
+              Privacy
+            </a>
+            <a href={'/help'}  className={`text-primary hover:text-black flex gap-2`} >
+               Help
             </a>
            </nav>
          </div>

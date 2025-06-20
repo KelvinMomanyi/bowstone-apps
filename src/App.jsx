@@ -7,6 +7,7 @@ import Whatsapp from './components/Whatsapp'
 import Quote from './pages/Quote';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import HelpCenter from './pages/HelpCenter';
 
 const router = createBrowserRouter([
    {
@@ -18,12 +19,12 @@ const router = createBrowserRouter([
     element:<Contact/>
    },
    {
-    path:'/quote',
-    element:<Quote/>
-   },
-   {
     path:'/privacy',
     element:<PrivacyPolicy/>
+   },
+   {
+    path:'/help',
+    element:<HelpCenter/>
    },
   ]);
 
